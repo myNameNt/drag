@@ -3,3 +3,6 @@ body{
 	color: red;
 	line-height: 120px;
 }
+.box{
+	background:linear-gradient(top,red,black,gold);
+}
