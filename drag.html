@@ -17,6 +17,7 @@
 	</style>
 </head>
 <body>
+	<h1>我是在分支上写的</h1>
 	<div id="box" draggable="true">
 		GitTest
 	</div>
@@ -39,8 +40,15 @@
 		<li>16.使用git reset  --hard +commit 的id 恢复到指定的版本 （ps：所有文件）</li>
 		<li>17.使用git reset --hard HEAD^ 可以回到上一个版本（HEAD就像是一个指针，使用这个命令表示将指针移到最近的过去的一个版本）</li>
 		<li>18.使用git reset --hard HEAD~后面接一个数字 可以回到过去的指定的第几个版本</li>
+		<li>19.使用git remote 查看远程分支名 git remote -v 查看远程分支名和路径</li>
+		<li>19.使用git reflog 查看所有commit操作和 git reset操作记录。可以使用对应的id 然后使用git reset --hard +id 回到那个版本</li>
+		<li>20.使用git fetch 更新同步更新远程master到本地,由于多人合作时可能发生冲突（两个人或者多人修改了同一个地方的代码）发生冲突时使用 git diff master origin/master 查看本地master和远程master的区别 然后使用 git merge origin/master 合并 然后商量如何修改解决冲突 再做提交</li>
+		<li>21.使用git pull origin（若默认可不写） 自动合并 若有冲突使用远程master的代码替换本地的代码</li>
+		<li>22.使用git branch 查看当前项目所有本地分支 使用git branch +自定义分支名 创建一个新的分支</li>
+		<li>23.使用git checkout +分支名 切换到该分支</li>
+		<li>24.使用git checkout -b +自定义分支名 创建新的分支并切换到该分支（上面两步骤的简写）</li>
 	</ol>
 	<p>现在是只有工作去才会有这写文字</p>
-
+	
 </body>
 </html>
